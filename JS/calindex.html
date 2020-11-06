@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="Calculator/newstyle.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="bill-calculator">
+            <h1>Bill Calculator</h1>
+            <form name="calculator" id="calculator">
+
+                <div class="field-container">
+                    <label for="bill">Bill ($)</label>
+                    <input id="bill" type="number" name="bill" placeholder="$" min="1" required/>
+                </div>
+
+
+                <div class="field-container">
+                    <label for="percentage">Tip percentage (%)</label> 
+                    <input id="percentage" type="number" name="percentage" placeholder="%" max="100"/>
+                </div>
+
+
+                <div class="field-container">
+                    <label for="customer-num">Number of persons</label>
+                    <input id="customer-num" type="number" name="customer-num" placeholder="1" value="1" min="1" required/>
+                </div>
+
+
+                <div class="button-container">
+                    <button type="submit" name="calculate" id="btn-calc">Calculate</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="result-container">
+            <h1>Total Bill</h1>
+            <form name="results" id="results">
+
+                <div class="field-container">
+                    <label for="total-bill"> Total Bill ($)</label>
+                    <input id="total-bill" type="number" name="bill" placeholder="0" disabled/>
+                </div>
+
+
+                <div class="field-container">
+                    <label for="total-percentage">Total tip (%)</label> 
+                    <input id="total-percentage" type="number" name="percentage" placeholder="0" disabled/>
+                </div>
+
+
+                <div class="field-container">
+                    <label for="total-per-customer">Total per person</label>
+                    <input id="total-per-customer" type="number" name="customer-num" placeholder="0" disabled/>
+                </div>
+            </form>
+        </div>
+    </div>
+ <script src="Calculator/Calculator.js" type="application/javascript"></script>   
+</body>
+</html>
