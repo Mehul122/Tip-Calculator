@@ -31,4 +31,14 @@ Test Cases:
 
 15. Fields Total bill, Total tip and total per person should have placeholders as 0 in case if there is no bill.
 
+16. Verify that the total bill sholud be calculated even if the Tip percentage field is empty.
+
+17. Verify no changes should be performed on the result fields.
+
+18. Verify after hitting refresh old values should be deleted.
+
+19. Verify the functionality of Up and Down logs in the input section of Bill Calculator.
+
+20. Verify the output displayed are as expecetd or not.
+
 
